@@ -14,4 +14,13 @@ public class FizzBuzzPopTest {
 
         assertEquals("pop", actual);
     }
+
+    @Test
+    public void calculate_ShouldReturnPop_WhenGivenMultipleOfSeven() {
+        FizzBuzzPop fizzBuzzPop = new FizzBuzzPop();
+
+        String actual = fizzBuzzPop.calculate(28);
+
+        assertEquals("pop", actual);
+    }
 }
