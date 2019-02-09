@@ -23,4 +23,13 @@ public class FizzBuzzPopTest {
 
         assertEquals("pop", actual);
     }
+
+    @Test
+    public void calculate_ShouldReturnTheOriginalNumber_WhenGivenNumberOtherThanSeven() {
+        FizzBuzzPop fizzBuzzPop = new FizzBuzzPop();
+
+        String actual = fizzBuzzPop.calculate(1);
+
+        assertEquals("1", actual);
+    }
 }

@@ -3,6 +3,10 @@ package com.pairinggood;
 public class FizzBuzzPop {
 
     public String calculate(int value) {
-        return "pop";
+        if (value % 7 == 0) {
+            return "pop";
+        }
+        
+        return Integer.toString(value);
     }
 }
